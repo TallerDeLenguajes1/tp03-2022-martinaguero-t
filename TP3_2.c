@@ -36,6 +36,18 @@ int main(){
     {
         puts(V[i]);
     }
+
+    
+    for (int i = 0; i < 5; i++)
+    {
+        free(V[i]);
+        // Libero la memoria reservada para cada nombre
+    }
+    
+    free(buffer);
+    // Libero la memoria reservada para el buffer.
+
+    
     
     return 0;
 
