@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define TAMANO 5
 #define BUFFSIZE 50
 
 int main(){
@@ -27,7 +26,8 @@ int main(){
     fflush(stdin);
 
     vectorNombres = (char **) malloc(cantidadNombres*sizeof(char*));
-
+    // Reservo memoria para cantidadNombres de punteros (segun lo ingresado por el usuario)
+    
     for (int i = 0; i < cantidadNombres; i++)
     {
         printf("Ingrese el nombre %d:",i+1);

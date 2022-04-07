@@ -13,7 +13,7 @@ int main(){
     buffer = (char *) malloc(sizeof(BUFFSIZE)*sizeof(char));
     // Puntero auxiliar buffer para recibir los nombres ingresados por el usuario.
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < TAMANO; i++)
     {
         printf("Ingrese el nombre %d:",i+1);
 
@@ -32,18 +32,18 @@ int main(){
 
     printf("Muestro los nombres: \n");
 
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < TAMANO; i++)
     {
         puts(V[i]);
     }
 
     
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < TAMANO; i++)
     {
         free(V[i]);
         // Libero la memoria reservada para cada nombre
     }
-    
+
     free(buffer);
     // Libero la memoria reservada para el buffer.
 
