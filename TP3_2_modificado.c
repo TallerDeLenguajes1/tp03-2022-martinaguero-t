@@ -27,7 +27,7 @@ int main(){
 
     vectorNombres = (char **) malloc(cantidadNombres*sizeof(char*));
     // Reservo memoria para cantidadNombres de punteros (segun lo ingresado por el usuario)
-    
+
     for (int i = 0; i < cantidadNombres; i++)
     {
         printf("Ingrese el nombre %d:",i+1);
