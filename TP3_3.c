@@ -134,7 +134,7 @@ void cargarProductos(Producto* puntProductos, int cantidadProductos){
         puntProductos[i].productoID = i+1;
         // Asigno el ID del producto
 
-        puntProductos[i].cantidad = rand()%10 + 1;
+        puntProductos[i].cantidad = rand()%PRODUCTOSMAX + 1;
         // Genero aleatoriamente la cantidad de productos correspondiente a cada tipo.
 
         randTipo = rand()%5;
