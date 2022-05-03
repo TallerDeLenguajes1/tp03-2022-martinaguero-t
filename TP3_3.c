@@ -190,6 +190,8 @@ float mostrar_calculartotal_productos(Producto* puntProductos, int numProductos)
         total = total + calcularCostoProducto(puntProductos[i]);
 
     }
+
+    return total;
     
 }
 
